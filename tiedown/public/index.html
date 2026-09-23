@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Tiedown - Small Structure Wind Calculator</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%277%27 fill=%27%230b5cad%27/%3E%3Cpath d=%27M9 8v9a7 7 0 0 0 14 0V8%27 fill=%27none%27 stroke=%27white%27 stroke-width=%273%27/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="brand"><span class="logo" aria-hidden="true"></span><div><h1>Tiedown</h1><p>Wind, uplift and foundation screening for sheds and fences</p></div></div>
+    <div class="actions">
+      <button id="btn-sample" type="button" title="Load a fictional example project">Sample project</button>
+      <button id="btn-new" type="button" title="Start a blank project">New</button>
+      <button id="btn-open" type="button">Open</button>
+      <button id="btn-save" type="button">Save</button>
+      <button id="btn-clear" type="button" title="Blank the optional report header fields">Clear identifying data</button>
+      <input id="file-open" type="file" accept=".json,application/json" hidden>
+    </div>
+  </header>
+  <div id="banner"></div>
+  <nav id="nav" aria-label="Pages"></nav>
+  <main id="page"></main>
+  <footer class="foot">A calculation aid. Results must be reviewed by the responsible design professional, and code requirements confirmed against the adopted editions and the plans examiner. Data stays in this browser; nothing is sent to a server.</footer>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

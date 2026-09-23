@@ -1,0 +1,15 @@
+# Render blueprint. A Node web service (not a static site) is required for the PIN gate,
+# because the PIN is checked on the server before any file is sent.
+services:
+  - type: web
+    name: tiedown
+    runtime: node
+    plan: free
+    buildCommand: "echo no build step"
+    startCommand: node server.js
+    healthCheckPath: /healthz
+    envVars:
+      - key: APP_PIN
+        sync: false        # set this in the Render dashboard; never commit it
+      - key: APP_SECRET
+        generateValue: true
